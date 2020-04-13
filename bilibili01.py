@@ -7,7 +7,7 @@ import requests
 import json
 import time, datetime
 from time import strftime, localtime
-UserUid = 397875469# 获取B站粉丝数
+UserUid = 397875469# 修改为自己的B站uid
 url = 'http://api.bilibili.com/x/relation/stat?vmid=%d' 
 data = requests.get(url % (UserUid), verify=False)
 information = json.loads(data.text)
@@ -55,7 +55,7 @@ try:
 	Other = Image.new('1', (epd.width, epd.height), 255)# 255: clear the frame
 	draw_Himage = ImageDraw.Draw(Himage)
 	draw_other = ImageDraw.Draw(Other)
-	draw_Himage.text((175, 80), u'风行造价工作室', font = font68, fill = 0)
+	draw_Himage.text((175, 80), u'风行造价工作室', font = font68, fill = 0) #这里修改为自己的用户名
 	draw_Himage.text((170, 185), u'祝贺您获得                粉丝', font = font42, fill = 0)
 	draw_other.text((420, 185), fss, font = font60, fill = 0)
 	draw_Himage.text((20, 440), u'          年     月    日 星期', font = font31, fill = 0)
