@@ -7,7 +7,7 @@ import requests
 import json
 import time, datetime
 from time import strftime, localtime
-UserUid = 397875469# 修改为自己的B站uid
+UserUid = 397875469 #修改为自己的B站uid
 url = 'http://api.bilibili.com/x/relation/stat?vmid=%d' 
 data = requests.get(url % (UserUid), verify=False)
 information = json.loads(data.text)
