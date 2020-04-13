@@ -10,4 +10,3 @@ while 1==1:
     os.system("python /home/pi/bilibili01.py")
     second = sleeptime(0,30,0)  #刷新间隔，小时，分钟，秒，现在设置30分钟刷新一次
     time.sleep(second)
-
