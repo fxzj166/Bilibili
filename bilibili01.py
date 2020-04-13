@@ -20,7 +20,6 @@ fss = str(fsss)
 print(fss)
 
 
-
 # 获取日期、 时间、 星期、农历
 rq = strftime("%Y", localtime()) + "    " + strftime("%m", localtime()) +"    " + strftime("%d", localtime()) + "          "
 #时间
